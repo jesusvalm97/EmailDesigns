@@ -25,6 +25,14 @@
                 margin: auto;
             }
 
+            .MarginBottom2 {
+                margin-bottom: 2em;
+            }
+
+            .MarginBottom5 {
+                margin-bottom: 5em;
+            }
+
             .MarginLeftRightAuto {
                 margin-left: auto;
                 margin-right: auto;
@@ -51,14 +59,13 @@
             /**************
                 Buttons
             **************/
-            button {
-                padding: 0.5em 1.25em;
+            .button {
+                padding: 1em 1.5em;
                 border-radius: 1.5em;
-                height: 40px;
                 font-weight: bold;
             }
 
-                button:hover {
+                .button {
                     cursor: pointer;
                 }
 
@@ -120,7 +127,7 @@
 
             #container {
                 padding: 0em 10em 2.5em 10em;
-                width: 90%;
+                width: 75%;
             }
 
             /************
@@ -198,14 +205,14 @@
                     </div>
                 </div>
 
-                <div id="container">
-                    <p class="TAC">
+                <div id="container" class="MarginLeftRightAuto">
+                    <p class="TAC MarginBottom2" style="font-size: 1.5em; color: rgba(255, 255, 255, 0.8);">
                         Para utilizar locki.pro necesitas tener una cuenta activa. <br>
                         Puedes <a href="https://locki.pro/" class="textPink TAC link">crearla gratis en este link.</a>
                     </p>
 
-                    <div class="TAC">
-                        <button class="whiteButton">Consultar contrato</button>
+                    <div class="TAC MarginBottom5">
+                        <a class="button whiteButton">Consultar contrato    ⟶</a>
                     </div>
 
                     <h2 class="TAC textPink">¿Tu también necesitas contratos?</h2>
@@ -216,7 +223,7 @@
                     </p>
 
                     <div class="TAC">
-                        <button class="blackPinkButton">Conoce locki.pro</button>
+                        <a class="button blackPinkButton">Conoce locki.pro</a>
                     </div>
                     
                     <h2 class="TAC textAqua">Blockchain lo hace posible</h2>
