@@ -1,9 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                background-color: black;
+            }
 
+            #page {
+                display: grid;
+                grid-template-rows: auto auto 1fr;
+                grid-template-areas: 
+                'header'
+                'barHeader'
+                'contentPage'
+                'barFooter'
+                'footer';
+            }
+
+            #header {
+                grid-area: header;
+            }
+
+            #barHeader {
+                grid-area: barHeader;
+                margin-bottom: 1em;
+            }
+
+            #content {
+                grid-area: contentPage;
+            }
+
+            #barFooter {
+                grid-area: barFooter;
+            }
+            
+            #footer {
+                grid-area: footer;
+            }
+
+            .IconLocki {
+                width: 12em;
+            }
+
+            .ColorsBar {
+                background: radial-gradient(circle, rgba(226,255,34,1) 35%, rgba(245,192,170,1) 50%, rgba(255,158,245,1) 68%, rgba(158,255,255,1) 100%);
+                background-image: linear-gradient(to right, rgba(226,255,34,1), rgba(245,192,170,1), rgba(255,158,245,1), rgba(158,255,255,1));
+                height: 3px;
+                width: 100%;
+            }
+
+        </style>
     </head>
     <body>
-        
+        <div id="page">
+            <div id="header">
+                <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
+            </div>
+
+            <div id="barHeader" class="ColorsBar"></div>
+
+            <div id="content">
+            </div>
+
+            <div id="barFooter" class="ColorsBar"></div>
+
+            <div id="footer">
+                <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
+            </div>
+        </div>
     </body>
 </html>
