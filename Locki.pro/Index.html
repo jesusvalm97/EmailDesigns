@@ -48,6 +48,43 @@
                 color: #9EFFFF !important;
             }
 
+            /**************
+                Buttons
+            **************/
+            button {
+                padding: 0.5em 1.25em;
+                border-radius: 1.5em;
+                height: 40px;
+                font-weight: bold;
+            }
+
+                button:hover {
+                    cursor: pointer;
+                }
+
+            .whiteButton {
+                background: #FFFFFF;
+                border: none;
+                color: #000000;
+            }
+
+                .whiteButton:hover {
+                    background: black;
+                    border: solid 1px white;
+                    color: white;
+                }
+
+            .blackPinkButton {
+                background: #000000;
+                border: solid 1px #FF9EF5;
+                color: #FF9EF5;
+            }
+                .blackPinkButton:hover {
+                    background: #FF9EF5;
+                    border: none;
+                    color: black;
+                }
+
             /**********************
                 Main container
             **********************/
@@ -167,18 +204,22 @@
                         Puedes <a href="https://locki.pro/" class="textPink TAC link">crearla gratis en este link.</a>
                     </p>
 
-                    <button>Consultar contrato</button>
+                    <div class="TAC">
+                        <button class="whiteButton">Consultar contrato</button>
+                    </div>
 
-                    <h2 class="TAC">¿Tu también necesitas contratos?</h2>
+                    <h2 class="TAC textPink">¿Tu también necesitas contratos?</h2>
                     <p class="TAC">
                         Tus primeros 3 contratos son gratis. Conoce locki.pro y prueba las ventajas 
                         de realizar tus acuerdos de trabajo, inmobiliarios y confidencialidad de 
                         información con profesionalismo y validez legal.
                     </p>
 
-                    <button>Conoce locki.pro</button>
-
-                    <h2 class="TAC">Blockchain lo hace posible</h2>
+                    <div class="TAC">
+                        <button class="blackPinkButton">Conoce locki.pro</button>
+                    </div>
+                    
+                    <h2 class="TAC textAqua">Blockchain lo hace posible</h2>
                     <p class="TAC">
                         Nuestro objetivo es que tu como empresario adoptes una cultura de formalidad y 
                         protección, en compraventas, administración , contratos laborales o de arrendamiento 
