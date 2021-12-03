@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">
+<!DOCTYPE html>
 <html>
     <head>
         <style>
@@ -14,227 +14,51 @@
                 background-color: black;
             }
 
-            .link {
+            a {
                 text-decoration: none !important;
             }
-
-            /***************
-                Margin
-            ***************/
-            .MarginAuto {
-                margin: auto;
-            }
-
-            .MarginBottom2 {
-                margin-bottom: 2em;
-            }
-
-            .MarginBottom5 {
-                margin-bottom: 5em;
-            }
-
-            .MarginLeftRightAuto {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            /****************
-                Font weight
-            ****************/
-            .boldText {
-                font-weight: bold;
-            }
-
-            /*****************
-                Text align
-            *****************/
-            .TAC {
-                text-align: center;
-            }
-
-            /****************
-                Font color
-            ****************/
-            .textPink {
-                color: #FF9EF5 !important;
-            }
-
-            .textAqua {
-                color: #9EFFFF !important;
-            }
-
-            /**************
-                Buttons
-            **************/
-            .button {
-                padding: 1em 1.5em;
-                border-radius: 1.5em;
-                font-weight: bold;
-            }
-
-                .button {
-                    cursor: pointer;
-                }
-
-            .whiteButton {
-                background: #FFFFFF;
-                border: none;
-                color: #000000;
-            }
-
-                .whiteButton:hover {
-                    background: black;
-                    border: solid 1px white;
-                    color: white;
-                }
-
-            .blackPinkButton {
-                background: #000000;
-                border: solid 1px #FF9EF5;
-                color: #FF9EF5;
-            }
-                .blackPinkButton:hover {
-                    background: #FF9EF5;
-                    border: none;
-                    color: black;
-                }
-
-            /**********************
-                Main container
-            **********************/
-            #page {
-                display: grid;
-                grid-template-rows: auto auto 1fr;
-                grid-template-areas: 
-                'header'
-                'barHeader'
-                'contentPage'
-                'barFooter'
-                'footer';
-            }
-
-            /************
-                Header
-            ************/
-            #header {
-                grid-area: header;
-                padding: 2em;
-            }
-
-            #barHeader {
-                grid-area: barHeader;
-                margin-bottom: 1em;
-            }
-
-            /************
-                Content
-            ************/
-            #content {
-                grid-area: contentPage;
-            }
-
-            #container {
-                padding: 0em 10em 2.5em 10em;
-                width: 75%;
-            }
-
-            /************
-                Title
-            ************/
-            #signatureTitle {
-                background: url('https://locki.pro/images/signatureEmailBanner.png') no-repeat;
-                background-size: 90%;
-                height: 35em;
-                width: 60%;
-            }
-
-            #title {
-                padding-top: 30%;
-            }
-
-            #title h1 {
-                font-size: 4em;
-            }
-
-            /************
-                Footer
-            ************/
-            #barFooter {
-                grid-area: barFooter;
-            }
-            
-            #footer {
-                grid-area: footer;
-                padding: 2em;
-            }
-
-            #footer > *{
-                margin-bottom: 2em;
-            }
-
-            #LinksFooter * {   
-                margin-right: 2em;
-            }
-
-            /***************
-                Icon locki
-            ***************/
-            .IconLocki {
-                width: 12em;
-            }
-
-            /****************
-                Colors bar
-            ****************/
-            .ColorsBar {
-                background: radial-gradient(circle, rgba(226,255,34,1) 35%, rgba(245,192,170,1) 50%, rgba(255,158,245,1) 68%, rgba(158,255,255,1) 100%);
-                background-image: linear-gradient(to right, rgba(226,255,34,1), rgba(245,192,170,1), rgba(255,158,245,1), rgba(158,255,255,1));
-                height: 3px;
-                width: 100%;
-            }
-
         </style>
     </head>
     <body>
-        <div id="page">
-            <div id="header" class="TAC">
-                <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
+        <div style="display: grid; grid-template-rows: auto auto 1fr; grid-template-areas: 'header' 'barHeader' 'contentPage' 'barFooter' 'footer';">
+            <div style="grid-area: header; padding: 2em; text-align: center;">
+                <img style="width: 12em;" src="https://locki.pro/images/Locki_logo.svg" />
             </div>
 
-            <div id="barHeader" class="ColorsBar"></div>
+            <div style="grid-area: barHeader; margin-bottom: 1em; background: radial-gradient(circle, rgba(226,255,34,1) 35%, rgba(245,192,170,1) 50%, rgba(255,158,245,1) 68%, rgba(158,255,255,1) 100%); background-image: linear-gradient(to right, rgba(226,255,34,1), rgba(245,192,170,1), rgba(255,158,245,1), rgba(158,255,255,1)); height: 3px; width: 100%;"></div>
 
-            <div id="content">
-                <div id="titleContainer">
-                    <div id="signatureTitle" class="MarginLeftRightAuto">
-                        <div id="title">
-                            <h1 class="TAC">Revisa y firma</h1>
+            <div style="grid-area: contentPage;">
+                <div >
+                    <div style="background: url('https://locki.pro/images/signatureEmailBanner.png') no-repeat; background-size: 90%; height: 35em; width: 60%; margin-left: auto; margin-right: auto;">
+                        <div style="padding-top: 30%;">
+                            <h1 style="text-align: center; font-size: 4em;">Revisa y firma</h1>
                         </div>
                     </div>
                 </div>
 
-                <div id="container" class="MarginLeftRightAuto">
-                    <p class="TAC MarginBottom2" style="font-size: 1.5em; color: rgba(255, 255, 255, 0.8);">
+                <div style="padding: 0em 10em 2.5em 10em; margin-left: auto; margin-right: auto;">
+                    <p style="text-align: center; margin-bottom: 2em; font-size: 1.5em; color: rgba(255, 255, 255, 0.8);">
                         Para utilizar locki.pro necesitas tener una cuenta activa. <br>
-                        Puedes <a href="https://locki.pro/" class="textPink TAC link">crearla gratis en este link.</a>
+                        Puedes <a href="https://locki.pro/" style="text-align: center; color: #FF9EF5 !important;">crearla gratis en este link.</a>
                     </p>
 
-                    <div class="TAC MarginBottom5">
-                        <a class="button whiteButton">Consultar contrato    ⟶</a>
+                    <div style="text-align: center; margin-bottom: 5em;">
+                        <a style="cursor: pointer; padding: 1em 1.5em; border-radius: 1.5em; font-weight: bold; background: #FFFFFF; border: none; color: #000000;">Consultar contrato</a>
                     </div>
 
-                    <h2 class="TAC textPink">¿Tu también necesitas contratos?</h2>
-                    <p class="TAC MarginLeftRightAuto MarginBottom2" style="width: 40%;">
-                        <span class="boldText">Tus primeros 3 contratos son gratis.</span> Conoce locki.pro y prueba las ventajas 
+                    <h2 style="text-align: center; color: #FF9EF5 !important;">¿Tu también necesitas contratos?</h2>
+                    <p style="text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 2em; width: 40%;">
+                        <span style="font-weight: bold;">Tus primeros 3 contratos son gratis.</span> Conoce locki.pro y prueba las ventajas 
                         de realizar tus acuerdos de trabajo, inmobiliarios y confidencialidad de 
                         información con profesionalismo y validez legal.
                     </p>
 
-                    <div class="TAC MarginBottom5">
-                        <a class="button blackPinkButton">Conoce locki.pro</a>
+                    <div style="text-align: center; margin-bottom: 5em;">
+                        <a style="cursor: pointer; padding: 1em 1.5em; border-radius: 1.5em; font-weight: bold; background: #000000; border: solid 1px #FF9EF5; color: #FF9EF5;">Conoce locki.pro</a>
                     </div>
                     
-                    <h2 class="TAC textAqua">Blockchain lo hace posible</h2>
-                    <p class="TAC MarginLeftRightAuto MarginBottom5" style="font-size: 1.5em; width: 60%;">
+                    <h2 style="text-align: center; color: #9EFFFF !important;">Blockchain lo hace posible</h2>
+                    <p style="text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 5em; font-size: 1.5em; width: 60%;">
                         Nuestro objetivo es que tu como empresario adoptes una cultura de formalidad y 
                         protección, en compraventas, administración , contratos laborales o de arrendamiento 
                         e incluso al confiar información privada a terceros.
@@ -259,20 +83,20 @@
                 </div>
             </div>
 
-            <div id="barFooter" class="ColorsBar"></div>
+            <div style="grid-area: barFooter; background: radial-gradient(circle, rgba(226,255,34,1) 35%, rgba(245,192,170,1) 50%, rgba(255,158,245,1) 68%, rgba(158,255,255,1) 100%); background-image: linear-gradient(to right, rgba(226,255,34,1), rgba(245,192,170,1), rgba(255,158,245,1), rgba(158,255,255,1)); height: 3px; width: 100%;"></div>
 
-            <div id="footer" class="TAC">
-                <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
+            <div style="grid-area: footer; padding: 2em; text-align: center;">
+                <img style="width: 12em;" src="https://locki.pro/images/Locki_logo.svg" />
 
-                <p class="MarginLeftRightAuto" style="width: 45%;">
+                <p style="margin-left: auto; margin-right: auto; width: 45%;">
                     Este mensaje se envió a cefev.diseno@gmail.com. Si no quieres recibir estos correos electrónicos de locki.pro en 
                     el futuro, puedes editar tu perfil o darte de baja.
                 </p>
 
-                <div id="LinksFooter">
-                    <a>Términos de uso</a>
-                    <a>Política de privacidad</a>
-                    <a>Contáctanos</a>
+                <div>
+                    <a style="margin-right: 2em;">Términos de uso</a>
+                    <a style="margin-right: 2em;">Política de privacidad</a>
+                    <a style="margin-right: 2em;">Contáctanos</a>
                 </div>
 
                 <span>
