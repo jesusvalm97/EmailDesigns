@@ -2,10 +2,40 @@
 <html>
     <head>
         <style>
+            /**********************
+                General body
+            **********************/
+            * {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
             body {
                 background-color: black;
             }
 
+            /***************
+                Margin
+            ***************/
+            .MarginAuto {
+                margin: auto;
+            }
+
+            .MarginLeftRightAuto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /*****************
+                Text align
+            *****************/
+            .TAC {
+                text-align: center;
+            }
+
+            /**********************
+                Main container
+            **********************/
             #page {
                 display: grid;
                 grid-template-rows: auto auto 1fr;
@@ -17,6 +47,9 @@
                 'footer';
             }
 
+            /************
+                Header
+            ************/
             #header {
                 grid-area: header;
             }
@@ -26,10 +59,45 @@
                 margin-bottom: 1em;
             }
 
+            /************
+                Content
+            ************/
             #content {
                 grid-area: contentPage;
             }
 
+            /************
+                Title
+            ************/
+            #titleContainer {
+                position: relative;
+            }
+
+            #signatureTitle {
+                background: url('https://locki.pro/images/signatureEmailBanner.png') no-repeat;
+                background-size: 90%;
+                height: 35em;
+                width: 60%;
+            }
+
+            #title {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                z-index: 10;
+            }
+
+            #title h1 {
+                margin-top: 20%;
+                margin-bottom: auto;
+                font-size: 4em;
+            }
+
+            /************
+                Footer
+            ************/
             #barFooter {
                 grid-area: barFooter;
             }
@@ -38,10 +106,16 @@
                 grid-area: footer;
             }
 
+            /***************
+                Icon locki
+            ***************/
             .IconLocki {
                 width: 12em;
             }
 
+            /****************
+                Colors bar
+            ****************/
             .ColorsBar {
                 background: radial-gradient(circle, rgba(226,255,34,1) 35%, rgba(245,192,170,1) 50%, rgba(255,158,245,1) 68%, rgba(158,255,255,1) 100%);
                 background-image: linear-gradient(to right, rgba(226,255,34,1), rgba(245,192,170,1), rgba(255,158,245,1), rgba(158,255,255,1));
@@ -53,18 +127,24 @@
     </head>
     <body>
         <div id="page">
-            <div id="header">
+            <div id="header" class="TAC">
                 <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
             </div>
 
             <div id="barHeader" class="ColorsBar"></div>
 
             <div id="content">
+                <div id="titleContainer">
+                    <div id="signatureTitle" class="MarginLeftRightAuto"></div>
+                    <div id="title">
+                        <h1 class="TAC">Revisa y firma</h1>
+                    </div>
+                </div>
             </div>
 
             <div id="barFooter" class="ColorsBar"></div>
 
-            <div id="footer">
+            <div id="footer" class="TAC">
                 <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
             </div>
         </div>
