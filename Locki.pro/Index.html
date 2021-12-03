@@ -175,6 +175,15 @@
             
             #footer {
                 grid-area: footer;
+                padding: 2em;
+            }
+
+            #footer > *{
+                margin-bottom: 2em;
+            }
+
+            #LinksFooter * {   
+                margin-right: 2em;
             }
 
             /***************
@@ -264,7 +273,12 @@
             <div id="footer" class="TAC">
                 <img class="IconLocki" src="https://locki.pro/images/Locki_logo.svg" />
 
-                <div>
+                <p class="MarginLeftRightAuto" style="width: 45%;">
+                    Este mensaje se envió a cefev.diseno@gmail.com. Si no quieres recibir estos correos electrónicos de locki.pro en 
+                    el futuro, puedes editar tu perfil o darte de baja.
+                </p>
+
+                <div id="LinksFooter">
                     <a>Términos de uso</a>
                     <a>Política de privacidad</a>
                     <a>Contáctanos</a>
